@@ -29,11 +29,11 @@ struct ContentView: View {
 
     var timer: some View {
         HStack {
-            Text(self.presenter.viewModel.hours)
-            Text(":")
-            Text(self.presenter.viewModel.minutes)
-            Text(":")
-            Text(self.presenter.viewModel.seconds)
+            Text(self.presenter.viewModel.hours).font(.largeTitle)
+            Text(":").font(.largeTitle)
+            Text(self.presenter.viewModel.minutes).font(.largeTitle)
+            Text(":").font(.largeTitle)
+            Text(self.presenter.viewModel.seconds).font(.largeTitle)
         }
     }
 
@@ -42,7 +42,7 @@ struct ContentView: View {
             self.presenter.onToggleTimerButtonTap()
         }) {
             Text(self.presenter.viewModel.startStopButtonTitle)
-        }
+        }.font(.largeTitle)
     }
 }
 
