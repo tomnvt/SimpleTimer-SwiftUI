@@ -10,48 +10,44 @@ import SwiftUI
 
 struct ContentView: View {
 
-    @ObservedObject var viewModel = ContentViewModel()
+    @ObservedObject var viewModel: ContentViewModel
+    var presenter: ContentViewPresenter
+
+    init(presenter: ContentViewPresenter) {
+        self.presenter = presenter
+        self.viewModel = presenter.viewModel
+    }
 
     var body: some View {
         VStack {
             Spacer()
-            HStack {
-                Text(self.viewModel.hours)
-                Text(":")
-                Text(self.viewModel.minutes)
-                Text(":")
-                Text(self.viewModel.seconds)
-            }
+            timer
             Spacer()
-            Button(action: {
-                self.viewModel.onToggleTimerButtonTap()
-            }) {
-                Text(viewModel.startStopButtonTitle)
-            }
+            startStopButton
+        }
+    }
+
+    var timer: some View {
+        HStack {
+            Text(self.presenter.viewModel.hours)
+            Text(":")
+            Text(self.presenter.viewModel.minutes)
+            Text(":")
+            Text(self.presenter.viewModel.seconds)
+        }
+    }
+
+    var startStopButton: some View {
+        Button(action: {
+            self.presenter.onToggleTimerButtonTap()
+        }) {
+            Text(self.presenter.viewModel.startStopButtonTitle)
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
-    }
-}
-
-class ContentViewModel: ObservableObject {
-    
-    @Published var hours: String = "01"
-    @Published var minutes: String = "00"
-    @Published var seconds: String = "00"
-
-    @Published var startStopButtonTitle: String = "Start"
-
-    var timerIsRunning = false
-
-    func onToggleTimerButtonTap() {
-        timerIsRunning = !timerIsRunning
-        startStopButtonTitle = timerIsRunning ?
-            "Stop": "Start"
-        hours = "00"
+        ContentView(presenter: ContentViewPresenter())
     }
 }

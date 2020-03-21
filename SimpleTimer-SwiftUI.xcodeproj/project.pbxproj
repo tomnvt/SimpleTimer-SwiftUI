@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		621FD877A854A439B9D6827D /* Pods_SimpleTimer_SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD340C422A0EDDBB83C2B6BF /* Pods_SimpleTimer_SwiftUI.framework */; };
+		91F06D220A34F4DCC8E96130 /* Pods_SimpleTimer_SwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37B8D5E78FE29E79E7C2FF6 /* Pods_SimpleTimer_SwiftUITests.framework */; };
 		A6249AD12426ADBE00480D69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6249AD02426ADBE00480D69 /* AppDelegate.swift */; };
 		A6249AD32426ADBE00480D69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6249AD22426ADBE00480D69 /* SceneDelegate.swift */; };
 		A6249AD52426ADBE00480D69 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6249AD42426ADBE00480D69 /* ContentView.swift */; };
@@ -15,6 +17,9 @@
 		A6249ADD2426ADC000480D69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6249ADB2426ADC000480D69 /* LaunchScreen.storyboard */; };
 		A6249AE82426ADC000480D69 /* SimpleTimer_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6249AE72426ADC000480D69 /* SimpleTimer_SwiftUITests.swift */; };
 		A6249AF32426ADC000480D69 /* SimpleTimer_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6249AF22426ADC000480D69 /* SimpleTimer_SwiftUIUITests.swift */; };
+		A6F2D1762426BE5100DAE219 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F2D1752426BE5100DAE219 /* ContentViewModel.swift */; };
+		A6F2D1782426C7B300DAE219 /* ContentViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F2D1772426C7B300DAE219 /* ContentViewPresenter.swift */; };
+		BF3EF5E8B46E70E00FE13BE0 /* Pods_SimpleTimer_SwiftUI_SimpleTimer_SwiftUIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70C1C79ADB1DEC8F2D55337 /* Pods_SimpleTimer_SwiftUI_SimpleTimer_SwiftUIUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		115F68D91B9B1B540405CCB3 /* Pods-SimpleTimer-SwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTimer-SwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-SimpleTimer-SwiftUITests/Pods-SimpleTimer-SwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		126531C75768656711AEBB0E /* Pods-SimpleTimer-SwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTimer-SwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-SimpleTimer-SwiftUI/Pods-SimpleTimer-SwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
+		572DDEA25D21E9F5E1E503D9 /* Pods-SimpleTimer-SwiftUI-SimpleTimer-SwiftUIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTimer-SwiftUI-SimpleTimer-SwiftUIUITests.release.xcconfig"; path = "Target Support Files/Pods-SimpleTimer-SwiftUI-SimpleTimer-SwiftUIUITests/Pods-SimpleTimer-SwiftUI-SimpleTimer-SwiftUIUITests.release.xcconfig"; sourceTree = "<group>"; };
+		62EBA1296E2D2A0F9D2EA632 /* Pods-SimpleTimer-SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTimer-SwiftUI.release.xcconfig"; path = "Target Support Files/Pods-SimpleTimer-SwiftUI/Pods-SimpleTimer-SwiftUI.release.xcconfig"; sourceTree = "<group>"; };
+		9FFA35A22B181C75B7460BB1 /* Pods-SimpleTimer-SwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTimer-SwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-SimpleTimer-SwiftUITests/Pods-SimpleTimer-SwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A0AF228D1BF474EA79A8774F /* Pods-SimpleTimer-SwiftUI-SimpleTimer-SwiftUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTimer-SwiftUI-SimpleTimer-SwiftUIUITests.debug.xcconfig"; path = "Target Support Files/Pods-SimpleTimer-SwiftUI-SimpleTimer-SwiftUIUITests/Pods-SimpleTimer-SwiftUI-SimpleTimer-SwiftUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A6249ACD2426ADBE00480D69 /* SimpleTimer-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SimpleTimer-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6249AD02426ADBE00480D69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6249AD22426ADBE00480D69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +60,11 @@
 		A6249AEE2426ADC000480D69 /* SimpleTimer-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SimpleTimer-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6249AF22426ADC000480D69 /* SimpleTimer_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTimer_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		A6249AF42426ADC000480D69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6F2D1752426BE5100DAE219 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		A6F2D1772426C7B300DAE219 /* ContentViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewPresenter.swift; sourceTree = "<group>"; };
+		C37B8D5E78FE29E79E7C2FF6 /* Pods_SimpleTimer_SwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleTimer_SwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C70C1C79ADB1DEC8F2D55337 /* Pods_SimpleTimer_SwiftUI_SimpleTimer_SwiftUIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleTimer_SwiftUI_SimpleTimer_SwiftUIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD340C422A0EDDBB83C2B6BF /* Pods_SimpleTimer_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleTimer_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				621FD877A854A439B9D6827D /* Pods_SimpleTimer_SwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91F06D220A34F4DCC8E96130 /* Pods_SimpleTimer_SwiftUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF3EF5E8B46E70E00FE13BE0 /* Pods_SimpleTimer_SwiftUI_SimpleTimer_SwiftUIUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +102,8 @@
 				A6249AE62426ADC000480D69 /* SimpleTimer-SwiftUITests */,
 				A6249AF12426ADC000480D69 /* SimpleTimer-SwiftUIUITests */,
 				A6249ACE2426ADBE00480D69 /* Products */,
+				B9BB7ADA84F005AF241E9371 /* Pods */,
+				D1463BBF01A13C444F58C567 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +120,10 @@
 		A6249ACF2426ADBE00480D69 /* SimpleTimer-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				A6249AD02426ADBE00480D69 /* AppDelegate.swift */,
-				A6249AD22426ADBE00480D69 /* SceneDelegate.swift */,
+				A6F2D1792426C7CD00DAE219 /* SupportFiles */,
 				A6249AD42426ADBE00480D69 /* ContentView.swift */,
-				A6249AD62426ADC000480D69 /* Assets.xcassets */,
-				A6249ADB2426ADC000480D69 /* LaunchScreen.storyboard */,
-				A6249ADE2426ADC000480D69 /* Info.plist */,
-				A6249AD82426ADC000480D69 /* Preview Content */,
+				A6F2D1752426BE5100DAE219 /* ContentViewModel.swift */,
+				A6F2D1772426C7B300DAE219 /* ContentViewPresenter.swift */,
 			);
 			path = "SimpleTimer-SwiftUI";
 			sourceTree = "<group>";
@@ -136,6 +154,42 @@
 			path = "SimpleTimer-SwiftUIUITests";
 			sourceTree = "<group>";
 		};
+		A6F2D1792426C7CD00DAE219 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A6249AD02426ADBE00480D69 /* AppDelegate.swift */,
+				A6249AD22426ADBE00480D69 /* SceneDelegate.swift */,
+				A6249AD62426ADC000480D69 /* Assets.xcassets */,
+				A6249ADB2426ADC000480D69 /* LaunchScreen.storyboard */,
+				A6249ADE2426ADC000480D69 /* Info.plist */,
+				A6249AD82426ADC000480D69 /* Preview Content */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		B9BB7ADA84F005AF241E9371 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				126531C75768656711AEBB0E /* Pods-SimpleTimer-SwiftUI.debug.xcconfig */,
+				62EBA1296E2D2A0F9D2EA632 /* Pods-SimpleTimer-SwiftUI.release.xcconfig */,
+				A0AF228D1BF474EA79A8774F /* Pods-SimpleTimer-SwiftUI-SimpleTimer-SwiftUIUITests.debug.xcconfig */,
+				572DDEA25D21E9F5E1E503D9 /* Pods-SimpleTimer-SwiftUI-SimpleTimer-SwiftUIUITests.release.xcconfig */,
+				115F68D91B9B1B540405CCB3 /* Pods-SimpleTimer-SwiftUITests.debug.xcconfig */,
+				9FFA35A22B181C75B7460BB1 /* Pods-SimpleTimer-SwiftUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D1463BBF01A13C444F58C567 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD340C422A0EDDBB83C2B6BF /* Pods_SimpleTimer_SwiftUI.framework */,
+				C70C1C79ADB1DEC8F2D55337 /* Pods_SimpleTimer_SwiftUI_SimpleTimer_SwiftUIUITests.framework */,
+				C37B8D5E78FE29E79E7C2FF6 /* Pods_SimpleTimer_SwiftUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +197,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6249AF72426ADC000480D69 /* Build configuration list for PBXNativeTarget "SimpleTimer-SwiftUI" */;
 			buildPhases = (
+				85ED91102AEFC8EDBBEEA4C8 /* [CP] Check Pods Manifest.lock */,
 				A6249AC92426ADBE00480D69 /* Sources */,
 				A6249ACA2426ADBE00480D69 /* Frameworks */,
 				A6249ACB2426ADBE00480D69 /* Resources */,
+				01F6BA486CB022CFECB6905A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6249AFA2426ADC000480D69 /* Build configuration list for PBXNativeTarget "SimpleTimer-SwiftUITests" */;
 			buildPhases = (
+				00FCE0E80D45FE80A4B56150 /* [CP] Check Pods Manifest.lock */,
 				A6249ADF2426ADC000480D69 /* Sources */,
 				A6249AE02426ADC000480D69 /* Frameworks */,
 				A6249AE12426ADC000480D69 /* Resources */,
@@ -178,9 +235,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6249AFD2426ADC000480D69 /* Build configuration list for PBXNativeTarget "SimpleTimer-SwiftUIUITests" */;
 			buildPhases = (
+				2C7ACBBB176776A40708AE10 /* [CP] Check Pods Manifest.lock */,
 				A6249AEA2426ADC000480D69 /* Sources */,
 				A6249AEB2426ADC000480D69 /* Frameworks */,
 				A6249AEC2426ADC000480D69 /* Resources */,
+				D151C1841E0405F60E55F1FC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -262,13 +321,118 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00FCE0E80D45FE80A4B56150 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleTimer-SwiftUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		01F6BA486CB022CFECB6905A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleTimer-SwiftUI/Pods-SimpleTimer-SwiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleTimer-SwiftUI/Pods-SimpleTimer-SwiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SimpleTimer-SwiftUI/Pods-SimpleTimer-SwiftUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C7ACBBB176776A40708AE10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleTimer-SwiftUI-SimpleTimer-SwiftUIUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85ED91102AEFC8EDBBEEA4C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleTimer-SwiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D151C1841E0405F60E55F1FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleTimer-SwiftUI-SimpleTimer-SwiftUIUITests/Pods-SimpleTimer-SwiftUI-SimpleTimer-SwiftUIUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleTimer-SwiftUI-SimpleTimer-SwiftUIUITests/Pods-SimpleTimer-SwiftUI-SimpleTimer-SwiftUIUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SimpleTimer-SwiftUI-SimpleTimer-SwiftUIUITests/Pods-SimpleTimer-SwiftUI-SimpleTimer-SwiftUIUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A6249AC92426ADBE00480D69 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6F2D1762426BE5100DAE219 /* ContentViewModel.swift in Sources */,
 				A6249AD12426ADBE00480D69 /* AppDelegate.swift in Sources */,
 				A6249AD32426ADBE00480D69 /* SceneDelegate.swift in Sources */,
+				A6F2D1782426C7B300DAE219 /* ContentViewPresenter.swift in Sources */,
 				A6249AD52426ADBE00480D69 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,13 +596,14 @@
 		};
 		A6249AF82426ADC000480D69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 126531C75768656711AEBB0E /* Pods-SimpleTimer-SwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"SimpleTimer-SwiftUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SimpleTimer-SwiftUI/SupportFiles/Preview Content\"";
 				DEVELOPMENT_TEAM = TCU8TLU3RG;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "SimpleTimer-SwiftUI/Info.plist";
+				INFOPLIST_FILE = "SimpleTimer-SwiftUI/SupportFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,13 +617,14 @@
 		};
 		A6249AF92426ADC000480D69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62EBA1296E2D2A0F9D2EA632 /* Pods-SimpleTimer-SwiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"SimpleTimer-SwiftUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SimpleTimer-SwiftUI/SupportFiles/Preview Content\"";
 				DEVELOPMENT_TEAM = TCU8TLU3RG;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "SimpleTimer-SwiftUI/Info.plist";
+				INFOPLIST_FILE = "SimpleTimer-SwiftUI/SupportFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -472,6 +638,7 @@
 		};
 		A6249AFB2426ADC000480D69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 115F68D91B9B1B540405CCB3 /* Pods-SimpleTimer-SwiftUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +661,7 @@
 		};
 		A6249AFC2426ADC000480D69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FFA35A22B181C75B7460BB1 /* Pods-SimpleTimer-SwiftUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,6 +684,7 @@
 		};
 		A6249AFE2426ADC000480D69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0AF228D1BF474EA79A8774F /* Pods-SimpleTimer-SwiftUI-SimpleTimer-SwiftUIUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -536,6 +705,7 @@
 		};
 		A6249AFF2426ADC000480D69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 572DDEA25D21E9F5E1E503D9 /* Pods-SimpleTimer-SwiftUI-SimpleTimer-SwiftUIUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
