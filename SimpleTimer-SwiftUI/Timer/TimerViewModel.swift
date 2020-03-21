@@ -1,5 +1,5 @@
 //
-//  ContentViewModel.swift
+//  TimerViewModel.swift
 //  SimpleTimer-SwiftUI
 //
 //  Created by Tomáš Novotný on 21/03/2020.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-class ContentViewModel: ObservableObject {
+class TimerViewModel: ObservableObject {
     
     @Published var hours: String = "00"
     @Published var minutes: String = "00"
