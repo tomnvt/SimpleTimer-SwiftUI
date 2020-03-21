@@ -1,6 +1,0 @@
-framework module Pods_SimpleTimer_SwiftUI_SimpleTimer_SwiftUIUITests {
-  umbrella header "Pods-SimpleTimer-SwiftUI-SimpleTimer-SwiftUIUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

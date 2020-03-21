@@ -1,5 +1,0 @@
-#import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_SimpleTimer_SwiftUI_SimpleTimer_SwiftUIUITests : NSObject
-@end
-@implementation PodsDummy_Pods_SimpleTimer_SwiftUI_SimpleTimer_SwiftUIUITests
-@end
