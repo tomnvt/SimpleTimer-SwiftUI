@@ -13,5 +13,5 @@ class TimerViewModel: ObservableObject {
     @Published var hours: String = "00"
     @Published var minutes: String = "00"
     @Published var seconds: String = "00"
-    @Published var startStopButtonTitle: String = "Start"
+    @Published var startStopButtonTitle: String = "START"
 }

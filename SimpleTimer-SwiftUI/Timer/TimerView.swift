@@ -25,6 +25,7 @@ struct TimerView: View {
                 timer
                 Spacer()
                 buttons
+                Spacer()
             }
         }
     }
@@ -60,7 +61,7 @@ struct TimerView: View {
     
     var setTimeNavigationLink: some View {
         NavigationLink(destination: SetTimeView()) {
-            Text("Settings").font(.largeTitle)
+            Text("SET").font(.largeTitle)
         }
     }
 }

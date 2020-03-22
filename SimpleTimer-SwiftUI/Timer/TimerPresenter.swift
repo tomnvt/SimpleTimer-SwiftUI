@@ -22,7 +22,7 @@ class TimerPresenter {
     
     func onToggleTimerButtonTap() {
         timerIsRunning = !timerIsRunning
-        viewModel.startStopButtonTitle = timerIsRunning ? "Stop": "Start"
+        viewModel.startStopButtonTitle = timerIsRunning ? "STOP": "START"
         toggleTimer()
     }
 

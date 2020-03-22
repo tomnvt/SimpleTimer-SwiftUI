@@ -17,6 +17,7 @@
 		A6249ADD2426ADC000480D69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6249ADB2426ADC000480D69 /* LaunchScreen.storyboard */; };
 		A6249AE82426ADC000480D69 /* SimpleTimer_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6249AE72426ADC000480D69 /* SimpleTimer_SwiftUITests.swift */; };
 		A6249AF32426ADC000480D69 /* SimpleTimer_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6249AF22426ADC000480D69 /* SimpleTimer_SwiftUIUITests.swift */; };
+		A6E8CC41242826C10068D6F4 /* Multipicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E8CC40242826C10068D6F4 /* Multipicker.swift */; };
 		A6F2D1762426BE5100DAE219 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F2D1752426BE5100DAE219 /* TimerViewModel.swift */; };
 		A6F2D1782426C7B300DAE219 /* TimerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F2D1772426C7B300DAE219 /* TimerPresenter.swift */; };
 		A6F2D17D2426D5F300DAE219 /* TimerText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F2D17C2426D5F300DAE219 /* TimerText.swift */; };
@@ -63,6 +64,7 @@
 		A6249AEE2426ADC000480D69 /* SimpleTimer-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SimpleTimer-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6249AF22426ADC000480D69 /* SimpleTimer_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTimer_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		A6249AF42426ADC000480D69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6E8CC40242826C10068D6F4 /* Multipicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multipicker.swift; sourceTree = "<group>"; };
 		A6F2D1752426BE5100DAE219 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		A6F2D1772426C7B300DAE219 /* TimerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPresenter.swift; sourceTree = "<group>"; };
 		A6F2D17C2426D5F300DAE219 /* TimerText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerText.swift; sourceTree = "<group>"; };
@@ -159,6 +161,14 @@
 			path = "SimpleTimer-SwiftUIUITests";
 			sourceTree = "<group>";
 		};
+		A6E8CC3F242826B10068D6F4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A6E8CC40242826C10068D6F4 /* Multipicker.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		A6F2D1792426C7CD00DAE219 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +205,7 @@
 		A6F2D1802426D83A00DAE219 /* SetTime */ = {
 			isa = PBXGroup;
 			children = (
+				A6E8CC3F242826B10068D6F4 /* Components */,
 				A6F2D1812426D84500DAE219 /* SetTimeView.swift */,
 			);
 			path = SetTime;
@@ -467,6 +478,7 @@
 				A6F2D1822426D84500DAE219 /* SetTimeView.swift in Sources */,
 				A6249AD12426ADBE00480D69 /* AppDelegate.swift in Sources */,
 				A6F2D17D2426D5F300DAE219 /* TimerText.swift in Sources */,
+				A6E8CC41242826C10068D6F4 /* Multipicker.swift in Sources */,
 				A6249AD32426ADBE00480D69 /* SceneDelegate.swift in Sources */,
 				A6F2D1782426C7B300DAE219 /* TimerPresenter.swift in Sources */,
 				A6249AD52426ADBE00480D69 /* TimerView.swift in Sources */,
@@ -640,6 +652,7 @@
 				DEVELOPMENT_TEAM = TCU8TLU3RG;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SimpleTimer-SwiftUI/SupportFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -661,6 +674,7 @@
 				DEVELOPMENT_TEAM = TCU8TLU3RG;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SimpleTimer-SwiftUI/SupportFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
