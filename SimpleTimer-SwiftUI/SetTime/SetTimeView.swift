@@ -20,6 +20,12 @@ struct SetTimeView: View {
 
     @State var selection: [String] = [0, 0, 0].map { "\($0)" }
 
+    private let viewModel: SetTimeViewModel
+
+    init(viewModel: SetTimeViewModel) {
+        self.viewModel = viewModel
+    }
+    
     var body: some View {
         VStack(alignment: .center) {
             MultiPicker(data: data, selection: $selection).frame(height: 300)

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		621FD877A854A439B9D6827D /* Pods_SimpleTimer_SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD340C422A0EDDBB83C2B6BF /* Pods_SimpleTimer_SwiftUI.framework */; };
 		91F06D220A34F4DCC8E96130 /* Pods_SimpleTimer_SwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37B8D5E78FE29E79E7C2FF6 /* Pods_SimpleTimer_SwiftUITests.framework */; };
+		A615C12E242AC5F400CD1228 /* SetTimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A615C12D242AC5F400CD1228 /* SetTimeViewModel.swift */; };
+		A615C130242AC76A00CD1228 /* ContainerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A615C12F242AC76A00CD1228 /* ContainerBuilder.swift */; };
 		A6249AD12426ADBE00480D69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6249AD02426ADBE00480D69 /* AppDelegate.swift */; };
 		A6249AD32426ADBE00480D69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6249AD22426ADBE00480D69 /* SceneDelegate.swift */; };
 		A6249AD52426ADBE00480D69 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6249AD42426ADBE00480D69 /* TimerView.swift */; };
@@ -50,6 +52,8 @@
 		62EBA1296E2D2A0F9D2EA632 /* Pods-SimpleTimer-SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTimer-SwiftUI.release.xcconfig"; path = "Target Support Files/Pods-SimpleTimer-SwiftUI/Pods-SimpleTimer-SwiftUI.release.xcconfig"; sourceTree = "<group>"; };
 		9FFA35A22B181C75B7460BB1 /* Pods-SimpleTimer-SwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTimer-SwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-SimpleTimer-SwiftUITests/Pods-SimpleTimer-SwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A0AF228D1BF474EA79A8774F /* Pods-SimpleTimer-SwiftUI-SimpleTimer-SwiftUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTimer-SwiftUI-SimpleTimer-SwiftUIUITests.debug.xcconfig"; path = "Target Support Files/Pods-SimpleTimer-SwiftUI-SimpleTimer-SwiftUIUITests/Pods-SimpleTimer-SwiftUI-SimpleTimer-SwiftUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A615C12D242AC5F400CD1228 /* SetTimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTimeViewModel.swift; sourceTree = "<group>"; };
+		A615C12F242AC76A00CD1228 /* ContainerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerBuilder.swift; sourceTree = "<group>"; };
 		A6249ACD2426ADBE00480D69 /* SimpleTimer-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SimpleTimer-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6249AD02426ADBE00480D69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6249AD22426ADBE00480D69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +135,7 @@
 				A6F2D1802426D83A00DAE219 /* SetTime */,
 				A6F2D17A2426D56A00DAE219 /* Timer */,
 				A6F2D1792426C7CD00DAE219 /* SupportFiles */,
+				A615C12F242AC76A00CD1228 /* ContainerBuilder.swift */,
 			);
 			path = "SimpleTimer-SwiftUI";
 			sourceTree = "<group>";
@@ -207,6 +212,7 @@
 			children = (
 				A6E8CC3F242826B10068D6F4 /* Components */,
 				A6F2D1812426D84500DAE219 /* SetTimeView.swift */,
+				A615C12D242AC5F400CD1228 /* SetTimeViewModel.swift */,
 			);
 			path = SetTime;
 			sourceTree = "<group>";
@@ -479,8 +485,10 @@
 				A6249AD12426ADBE00480D69 /* AppDelegate.swift in Sources */,
 				A6F2D17D2426D5F300DAE219 /* TimerText.swift in Sources */,
 				A6E8CC41242826C10068D6F4 /* Multipicker.swift in Sources */,
+				A615C12E242AC5F400CD1228 /* SetTimeViewModel.swift in Sources */,
 				A6249AD32426ADBE00480D69 /* SceneDelegate.swift in Sources */,
 				A6F2D1782426C7B300DAE219 /* TimerPresenter.swift in Sources */,
+				A615C130242AC76A00CD1228 /* ContainerBuilder.swift in Sources */,
 				A6249AD52426ADBE00480D69 /* TimerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

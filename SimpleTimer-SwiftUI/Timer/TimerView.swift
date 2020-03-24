@@ -60,7 +60,7 @@ struct TimerView: View {
     }
     
     var setTimeNavigationLink: some View {
-        NavigationLink(destination: SetTimeView()) {
+        NavigationLink(destination: container.resolve(SetTimeView.self)!) {
             Text("SET").font(.largeTitle)
         }
     }
