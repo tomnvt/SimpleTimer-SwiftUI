@@ -11,6 +11,7 @@ import Foundation
 protocol InputConverterProtocol {
 
     func convert(_ input: [String]) -> Date
+    func convert(_ input: Date) -> [String]
 }
 
 class InputConverter: InputConverterProtocol {
@@ -21,5 +22,9 @@ class InputConverter: InputConverterProtocol {
         let seconds = Int(input[2]) ?? 0
         let totalSeconds = TimeInterval(hours*3600 + minutes*60 + seconds)
         return Date().addingTimeInterval(totalSeconds)
+    }
+
+    func convert(_ input: Date) -> [String] {
+        return ["01", "01", "01"]
     }
 }
