@@ -8,6 +8,14 @@
 
 import RxSwift
 
+protocol TimerPresenterProtocol {
+
+    func onToggleTimerButtonTap()
+    func toggleTimer()
+    func runTimer()
+    func stopTimer()
+}
+
 class TimerPresenter {
 
     // MARK: - Aliases
@@ -22,6 +30,7 @@ class TimerPresenter {
 
     private let interactor: Interactor
     
+    // MARK: - Init
     init(interactor: Interactor) {
         self.interactor = interactor
     }
@@ -29,7 +38,10 @@ class TimerPresenter {
     deinit {
         timerDisposable?.dispose()
     }
-    
+}
+
+extension TimerPresenter: TimerPresenterProtocol {
+
     func onToggleTimerButtonTap() {
         timerIsRunning = !timerIsRunning
         viewModel.startStopButtonTitle = timerIsRunning ? "STOP": "START"
