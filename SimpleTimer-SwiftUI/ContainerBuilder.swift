@@ -17,6 +17,7 @@ class ContainerBuilder {
         registerTimerModele(to: container)
         registerSetTimeModule(to: container)
         registerRemainingTimeInteractor(to: container)
+        registerInputConverter(to: container)
         return container
     }
 
@@ -48,6 +49,12 @@ class ContainerBuilder {
     static func registerRemainingTimeInteractor(to container: Container) {
         container.register(TimerInteractorProtocol.self) { r in
             TimerInteractor()
+        }
+    }
+
+    static func registerInputConverter(to container: Container) {
+        container.register(InputConverterProtocol.self) { r in
+            InputConverter()
         }
     }
 }
