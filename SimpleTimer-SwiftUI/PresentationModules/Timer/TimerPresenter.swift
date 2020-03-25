@@ -10,12 +10,22 @@ import RxSwift
 
 class TimerPresenter {
 
+    // MARK: - Aliases
+    typealias Interactor = TimerInteractorProtocol
+
+    // MARK: - Propeties
     var viewModel = TimerViewModel()
 
     var remainingTime: Date = Date().addingTimeInterval(60)
     var timerIsRunning: Bool = false
     var timerDisposable: Disposable?
 
+    private let interactor: Interactor
+    
+    init(interactor: Interactor) {
+        self.interactor = interactor
+    }
+    
     deinit {
         timerDisposable?.dispose()
     }

@@ -18,7 +18,7 @@ struct SetTimeView: View {
         ("Seconds", Array(0...60).map { "\($0)" })
     ]
 
-    @State var selection: [String] = [0, 0, 0].map { "\($0)" }
+    @State var selection = [0, 0, 0].map { "\($0)" }
 
     private let viewModel: SetTimeViewModel
 
@@ -30,7 +30,7 @@ struct SetTimeView: View {
         VStack(alignment: .center) {
             MultiPicker(data: data, selection: $selection).frame(height: 300)
             Button(action: {
-                print("I will set the time to \(self.selection)")
+                self.viewModel.onSetTimeButtonTap(values: self.selection)
                 self.presentationMode.wrappedValue.dismiss()
             }, label: {
                 Text("SET")

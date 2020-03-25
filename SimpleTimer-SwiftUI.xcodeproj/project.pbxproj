@@ -19,6 +19,7 @@
 		A6249ADD2426ADC000480D69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6249ADB2426ADC000480D69 /* LaunchScreen.storyboard */; };
 		A6249AE82426ADC000480D69 /* SimpleTimer_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6249AE72426ADC000480D69 /* SimpleTimer_SwiftUITests.swift */; };
 		A6249AF32426ADC000480D69 /* SimpleTimer_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6249AF22426ADC000480D69 /* SimpleTimer_SwiftUIUITests.swift */; };
+		A668DBB1242C1A61006942CC /* TimerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A668DBB0242C1A61006942CC /* TimerInteractor.swift */; };
 		A6E8CC41242826C10068D6F4 /* Multipicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E8CC40242826C10068D6F4 /* Multipicker.swift */; };
 		A6F2D1762426BE5100DAE219 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F2D1752426BE5100DAE219 /* TimerViewModel.swift */; };
 		A6F2D1782426C7B300DAE219 /* TimerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F2D1772426C7B300DAE219 /* TimerPresenter.swift */; };
@@ -68,6 +69,7 @@
 		A6249AEE2426ADC000480D69 /* SimpleTimer-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SimpleTimer-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6249AF22426ADC000480D69 /* SimpleTimer_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTimer_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		A6249AF42426ADC000480D69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A668DBB0242C1A61006942CC /* TimerInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerInteractor.swift; sourceTree = "<group>"; };
 		A6E8CC40242826C10068D6F4 /* Multipicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multipicker.swift; sourceTree = "<group>"; };
 		A6F2D1752426BE5100DAE219 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		A6F2D1772426C7B300DAE219 /* TimerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPresenter.swift; sourceTree = "<group>"; };
@@ -132,8 +134,9 @@
 		A6249ACF2426ADBE00480D69 /* SimpleTimer-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				A6F2D1802426D83A00DAE219 /* SetTime */,
-				A6F2D17A2426D56A00DAE219 /* Timer */,
+				A668DBAD242C1970006942CC /* Repositories */,
+				A668DBAC242C196B006942CC /* Interactors */,
+				A668DBAB242C1960006942CC /* PresentationModules */,
 				A6F2D1792426C7CD00DAE219 /* SupportFiles */,
 				A615C12F242AC76A00CD1228 /* ContainerBuilder.swift */,
 			);
@@ -164,6 +167,30 @@
 				A6249AF42426ADC000480D69 /* Info.plist */,
 			);
 			path = "SimpleTimer-SwiftUIUITests";
+			sourceTree = "<group>";
+		};
+		A668DBAB242C1960006942CC /* PresentationModules */ = {
+			isa = PBXGroup;
+			children = (
+				A6F2D1802426D83A00DAE219 /* SetTime */,
+				A6F2D17A2426D56A00DAE219 /* Timer */,
+			);
+			path = PresentationModules;
+			sourceTree = "<group>";
+		};
+		A668DBAC242C196B006942CC /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				A668DBB0242C1A61006942CC /* TimerInteractor.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		A668DBAD242C1970006942CC /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 		A6E8CC3F242826B10068D6F4 /* Components */ = {
@@ -487,6 +514,7 @@
 				A6E8CC41242826C10068D6F4 /* Multipicker.swift in Sources */,
 				A615C12E242AC5F400CD1228 /* SetTimeViewModel.swift in Sources */,
 				A6249AD32426ADBE00480D69 /* SceneDelegate.swift in Sources */,
+				A668DBB1242C1A61006942CC /* TimerInteractor.swift in Sources */,
 				A6F2D1782426C7B300DAE219 /* TimerPresenter.swift in Sources */,
 				A615C130242AC76A00CD1228 /* ContainerBuilder.swift in Sources */,
 				A6249AD52426ADBE00480D69 /* TimerView.swift in Sources */,

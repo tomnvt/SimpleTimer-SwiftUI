@@ -68,6 +68,6 @@ struct TimerView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        TimerView(presenter: TimerPresenter())
+        container.resolve(TimerView.self)!
     }
 }

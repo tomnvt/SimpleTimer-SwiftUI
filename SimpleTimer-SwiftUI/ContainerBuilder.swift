@@ -16,28 +16,38 @@ class ContainerBuilder {
         let container = Container()
         registerTimerModele(to: container)
         registerSetTimeModule(to: container)
+        registerRemainingTimeInteractor(to: container)
         return container
     }
 
+    // TODO: Separate by layers
     static func registerTimerModele(to container: Container) {
         container.register(TimerView.self) { r in
             let presenter = r.resolve(TimerPresenter.self)!
             return TimerView(presenter: presenter)
         }
 
-        container.register(TimerPresenter.self) { _ in
-            return TimerPresenter()
+        container.register(TimerPresenter.self) { r in
+            let interactor = r.resolve(TimerInteractorProtocol.self)!
+            return TimerPresenter(interactor: interactor)
         }
     }
 
     static func registerSetTimeModule(to container: Container) {
         container.register(SetTimeView.self) { r in
-            let viewModel = SetTimeViewModel()
+            let viewModel = r.resolve(SetTimeViewModel.self)!
             return SetTimeView(viewModel: viewModel)
         }
-        
-        container.register(SetTimeViewModel.self) { _ in
-            return SetTimeViewModel()
+
+        container.register(SetTimeViewModel.self) { r in
+            let interactor = r.resolve(TimerInteractorProtocol.self)!
+            return SetTimeViewModel(interactor: interactor)
+        }
+    }
+
+    static func registerRemainingTimeInteractor(to container: Container) {
+        container.register(TimerInteractorProtocol.self) { r in
+            TimerInteractor()
         }
     }
 }
